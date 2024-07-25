@@ -8,7 +8,8 @@ class Solution {
 }
 
 /*
-it answer = 0;
+endsWtih
+int answer = 0;
         for(int i = 0; i<my_string.length(); i++){
              if(is_suffix.equals(my_string.substring(i , my_string.length()))) {
                  return 1;
