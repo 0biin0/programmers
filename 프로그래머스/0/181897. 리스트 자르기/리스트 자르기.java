@@ -4,35 +4,34 @@ class Solution {
         int b = slicer[1];
         int c = slicer[2];
         
-        int[] answer;
-        
-        if(n == 1) {
-            answer = new int[b + 1];
-            for(int i = 0; i <= b; i++) {
+        if( n == 1){
+            int count = 0;
+            for(int i=0; i<=b; i++){
+                int[] answer = new int[count++];
                 answer[i] = num_list[i];
             }
-        } else if(n == 2) {
-            answer = new int[num_list.length - a];
-            for(int i = a; i < num_list.length; i++) {
-                answer[i - a] = num_list[i];
+        }else if(n == 2){
+            int count2 = 0;
+            for(int i =a; i<num_list.length; i++){
+                answer == new int[count2++];
+                answer[count2++] = num_list[i];
             }
-        } else if(n == 3) {
-            answer = new int[b - a + 1];
-            for(int i = a; i <= b; i++) {
-                answer[i - a] = num_list[i];
+        }else if(n == 3){
+            int count3 = 0;
+            for(int i =a; i<=b; i++){
+                answer == new int[count3++];
+                answer[count3++] = num_list[i];
             }
-        } else {
-            int size = (b - a) / c + 1;
-            answer = new int[size];
-            for(int i = a, j = 0; i <= b; i += c, j++) {
-                answer[j] = num_list[i];
+        }else{
+            int count4 = 0;
+            for(int i =a; i<=b; i++){
+                answer == new int[count4++];
+                answer[count4++] = num_list[i];
             }
         }
-        
         return answer;
     }
 }
-
 /*
 
 int a = slicer[0];
