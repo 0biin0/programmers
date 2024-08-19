@@ -6,11 +6,8 @@ class Solution {
             list.add(arr[i]);
         }
         for(int i = 0; i < delete_list.length; i++){
-            for(int j =0; j<list.size(); j++){
-                if(delete_list[i] == list.get(j)){
-                    list.remove(j);
-                }
-            }
+                    list.remove((Integer)delete_list[i]);
+            
         }
         int answer[] = new int[list.size()];
         for(int i = 0; i<list.size(); i++){
